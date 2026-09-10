@@ -78,6 +78,7 @@ public class Login extends javax.swing.JFrame {
         lblContra.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblContra.setText("Contraseña:");
 
+        btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/checkbox.png"))); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.addActionListener(this::btnRegistrarActionPerformed);
 
@@ -119,9 +120,11 @@ public class Login extends javax.swing.JFrame {
                 .addContainerGap(46, Short.MAX_VALUE))
         );
 
+        btnOcultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/eye-off.png"))); // NOI18N
         btnOcultar.setText("Ocultar");
         btnOcultar.addActionListener(this::btnOcultarActionPerformed);
 
+        btnVer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/eye-check.png"))); // NOI18N
         btnVer.setText("Ver");
         btnVer.addActionListener(this::btnVerActionPerformed);
 
